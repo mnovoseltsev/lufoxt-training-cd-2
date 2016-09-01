@@ -1,0 +1,1 @@
+lufoxt-training-cd
