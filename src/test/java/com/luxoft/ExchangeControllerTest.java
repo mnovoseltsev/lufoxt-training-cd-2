@@ -17,4 +17,11 @@ public class ExchangeControllerTest {
         assertEquals("not supported", controller.exchangeRate("pln"));
         assertEquals("1.00", controller.exchangeRate("usd"));
     }
+
+    @Test
+    public void shouldNotFailWhenNll() throws Exception {
+        ExchangeController controller = new ExchangeController();
+
+        assertEquals("not supported", controller.exchangeRate(null));
+    }
 }
